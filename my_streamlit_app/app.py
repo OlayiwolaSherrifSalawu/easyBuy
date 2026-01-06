@@ -54,7 +54,7 @@ st.markdown("""
 # --- 3. LOAD MODEL ---
 @st.cache_resource
 def load_model():
-    model_path = '/home/olayiwola/Desktop/easyBuy/tuned_random_forest_model.joblib'
+    model_path = 'tuned_random_forest_model.joblib'
     if not os.path.exists(model_path):
         st.error(f"⚠️ Model file missing at {model_path}")
         st.stop()
